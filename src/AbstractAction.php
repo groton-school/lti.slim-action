@@ -5,26 +5,17 @@ declare(strict_types=1);
 namespace GrotonSchool\Slim\Actions;
 
 use Psr\Http\Message\ResponseInterface;
-use Psr\Log\LoggerInterface;
 use Slim\Http\Response;
 use Slim\Http\ServerRequest;
 use Slim\Exception\HttpBadRequestException;
-use Slim\Exception\HttpNotFoundException;
 
 abstract class AbstractAction
 {
-    protected LoggerInterface $logger;
-
     protected ServerRequest $request;
 
     protected Response $response;
 
     protected array $args;
-
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
-    }
 
     /**
      * @throws HttpBadRequestException
