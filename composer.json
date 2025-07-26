@@ -1,7 +1,7 @@
 {
     "name": "groton-school/slim-action",
     "description": "Convenience wrapper for Slim framework actions",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "authors": [
         {
             "name": "Seth Battis",
